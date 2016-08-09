@@ -1,0 +1,231 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevor.ultimatehue.fragments.MusicFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spnMusicLightGroups"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+
+            <!-- Player Header -->
+            <LinearLayout
+                android:id="@+id/player_header_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_below="@id/spnMusicLightGroups"
+                android:background="@layout/bg_player_header"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <!-- Song Title -->
+                <TextView
+                    android:id="@+id/songTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="No Songs Found"
+                    android:textColor="@color/music_text"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />"
+
+                <!-- Playlist button -->
+                <ImageButton
+                    android:id="@+id/btnPlaylist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:src="@drawable/btn_playlist" />
+            </LinearLayout>
+
+            <!-- Progress Bar/Seek bar -->
+            <SeekBar
+                android:id="@+id/songProgressBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/player_header_bg"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/seek_handler" />
+
+
+            <!-- Player Footer -->
+            <LinearLayout
+                android:id="@+id/player_footer_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/songProgressBar"
+                android:background="@layout/bg_player_footer"
+                android:gravity="center">
+
+                <!-- Player Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@layout/rounded_corner"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <!-- Previous Button -->
+                    <ImageButton
+                        android:id="@+id/btnPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/btn_previous" />
+                    <!-- Backward Button -->
+                    <ImageButton
+                        android:id="@+id/btnRepeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/btn_repeat" />
+                    <!-- Play Button -->
+                    <ImageButton
+                        android:id="@+id/btnPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/btn_play" />
+                    <!-- Forward Button -->
+                    <ImageButton
+                        android:id="@+id/btnShuffle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/btn_shuffle" />
+                    <!-- Next Button -->
+                    <ImageButton
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/btn_next" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Timer Display -->
+            <LinearLayout
+                android:id="@+id/timerDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/songProgressBar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <!-- Current Duration Label -->
+                <TextView
+                    android:id="@+id/songCurrentDurationLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="#eeeeee"
+                    android:textStyle="bold" />
+                <!-- Total Duration Label -->
+                <TextView
+                    android:id="@+id/songTotalDurationLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/music_text"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/player_footer_bg"
+                android:background="@drawable/background_view_square_single"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light Saturation - Affects how vibrant colors will be"
+                    android:textColor="@color/music_text" />
+
+                <SeekBar
+                    android:id="@+id/seekBarMusicSaturation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="254"
+                    android:progress="254"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:thumb="@drawable/progress_thumb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brightness"
+                    android:textColor="@color/music_text" />
+
+                <SeekBar
+                    android:id="@+id/seekBarMusicBrightness"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="254"
+                    android:progress="175"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:thumb="@drawable/progress_thumb" />
+
+                <CheckBox
+                    android:id="@+id/quickTransitions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_checkbox"
+                    android:text="Quick Transitions"
+                    android:textColor="@color/music_text" />
+            </LinearLayout>
+
+        <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Refresh Rate "/>
+
+                <SeekBar
+                    android:id="@+id/seekBarRefreshRate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:max="29"/>
+
+                <TextView
+                android:id="@+id/txtRefreshRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                android:text=""/>
+
+                </LinearLayout> -->
+
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

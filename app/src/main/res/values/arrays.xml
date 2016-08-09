@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="custom_color_menu">
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="light_group_menu">
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

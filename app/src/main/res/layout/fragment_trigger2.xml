@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevor.ultimatehue.fragments.TriggerFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvTrigger"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#0000CC"
+            android:dividerHeight="3dp">
+
+        </ListView>
+
+    </LinearLayout>
+</FrameLayout>

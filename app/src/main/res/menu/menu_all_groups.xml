@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trevor.ultimatehue.NewGroupActivity">
+
+    <item android:id="@+id/add_new_group" android:title="+"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/edit_group" android:title="Edit"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>

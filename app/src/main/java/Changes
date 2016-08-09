@@ -1,0 +1,80 @@
+1.****
+ - Update the screens to listen for light changes and change the light state from on to off. For example update a
+ group for living room and smaller groups within should notice they are now on
+
+
+- Updated to EffectsFragmentV2
+    - Moved the code behind playing effects into the Effect.java class
+    - This matches how Triggers was done
+    - Allows for Effects to be more reusable going forward rather than trapped in the EffectsFragment
+- Updated to new ColorPicker classes
+    - Now uses a List/Detail Flow to show colors to be picked
+- AllGroupsFragmentV2 , AllLightsFragmentV2
+    - This will now use the new method to pick colors
+
+
+
+
+1.3.0 - Major Release
+
+Major Updates
+- Added Countries - Did Popular Olympic ones but mostly those countries who download the app
+    -- Added Countries Effect that loads in the ColorPicker Class (Not actual effect)
+- Added Trigger functionality - BETA
+    - Low Battery
+    - Okay Battery
+    - Wifi connected
+    - SMS Received
+- New Hue SDK used
+    - huelocalsdk.jar updated
+    - huesdkresources.jar updated
+    - Downloaded from http://www.developers.meethue.com/documentation/java-multi-platform-and-android-sdk
+
+
+Minor Updates
+- AllLightsFragment fix defect where bridge was null causing app to crash
+- Removed BETA Tag from the Hue Memory game
+- Fixed String issue with Alarm Activity - Light list was not properly loading the string values
+- Fixed issue with AlarmActivity where setting alarm time was difficult due to spinners being tiny
+- Made AlarmActivity to have bigger list for light groups (Changed height from 125dp to 175dp)
+- Allowed Fading for alarms (Up to 60 minutes)
+- Fixed issue on NewGroupActivity class where scrolling wasn't working for adding the group button
+
+
+
+
+
+- Noami Woods
+
+
+
+1.2.1 (Published 3/25)
+
+Major Updates
+Look up static content (Images and Raw sound file by name, not R.id Int value). This fixes issues where wrong int value could get populated
+    - updated database to version 2 (Done to implement the Database image string lookup and also make the "Pick Color" image be shown on first use for effects)
+    - Changed effects database to store string for image rather than the R.id number as this can change with updates - String resorce should stay the same
+    - Changed Colors to load from String rather than storing mipmap R value in database. Now looks up string name for the mipmap. This was done with the future and possible changes in mind.
+    Also is hopefully fixing bug where wrong images would be shown -- (return getResources().getIdentifier(imageId, "mipmap", getContext().getPackageName());)
+
+
+Minor Updates
+- Changed image for unknown color to say "Pick Color" for the effects only
+- Attempt to fix Defect on AllGroupsFragment Where getActivity() call was returning null (User Reported Defect)
+- Updated random lights to allow for update of only one light if wanted
+- Added progessBar to Memory (Beta) to show progress when correct light is guessed
+- Prevented Keyboard from showing up on screen loads (User must actively click in the EditText to load keyboard)
+
+
+Files Removed -- These were not used and not needed anymore as Hue had bettter ways to do them
+HueHelper.java
+LightGroupFactory.java
+
+Effects Added
+- Aurora effect (Per user Suggestion)
+- Paint Splatter (I just like it a lot)
+- Added Sound effect for Rainforest
+
+Dillon Harper
+stella-xo 35 gall
+Lily Rader, Naomi woods

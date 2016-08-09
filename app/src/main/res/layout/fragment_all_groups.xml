@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevor.ultimatehue.fragments.AllGroupsFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableLayout
+            android:id="@+id/all_groups_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </TableLayout>
+
+    </ScrollView>
+
+</FrameLayout>

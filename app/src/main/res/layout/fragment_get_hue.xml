@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevor.ultimatehue.fragments.GetHueFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Effects View"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/brightnessEditText"
+        android:layout_marginTop="50dp"
+        android:text="Get Hue" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startButton"
+        android:layout_alignBottom="@+id/startButton"
+        android:layout_toRightOf="@+id/txtLabel"
+        android:text="Set Hue" />
+
+    <TextView
+        android:id="@+id/hueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hueEditText"
+        android:layout_alignRight="@+id/startButton"
+        android:text="Hue Color" />
+
+    <TextView
+        android:id="@+id/saturationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saturationEditText"
+        android:layout_alignLeft="@+id/hueText"
+        android:text="Saturation" />
+
+    <TextView
+        android:id="@+id/brightnessText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_alignLeft="@+id/saturationText"
+        android:text="Brightness" />
+
+    <EditText
+        android:id="@+id/brightnessEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopButton"
+        android:layout_below="@+id/saturationEditText"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/hueEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brightnessEditText"
+        android:layout_below="@+id/txtLabel"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/saturationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brightnessEditText"
+        android:layout_below="@+id/hueEditText"
+        android:ems="10" />
+
+    </RelativeLayout>
+
+</FrameLayout>

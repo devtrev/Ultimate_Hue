@@ -1,0 +1,319 @@
+<resources>
+    <string name="app_name">Ultimate hue</string>
+
+    <string name="light_groups">Light Groups</string>
+    <string name="individual_lights">Individual Lights</string>
+    <string name="effects">Effects</string>
+    <string name="music">Music</string>
+    <string name="scenes">Scenes</string>
+    <string name="help">Help</string>
+    <string name="memory">Memory</string>
+    <string name="alarms">Alarms</string>
+    <string name="triggers">Triggers - BETA</string>
+    <string name="about">About</string>
+    <string name="hue_color_settings">Get Hue Color Settings</string>
+
+    <string-array name="navigation_drawer_list">
+        <item>@string/light_groups</item>
+        <item>@string/individual_lights</item>
+        <item>@string/effects</item>
+        <item>@string/music</item>
+        <item>@string/alarms</item>
+        <!--<item>@string/title_section5</item>-->
+        <!--<item>@string/help</item>-->
+        <item>@string/memory</item>
+        <item>@string/triggers</item>
+        <item>@string/about</item>
+        <!--<item>@string/hue_color_settings</item>-->
+    </string-array>
+
+    <string name="title_basic_color">Basic</string>
+    <string name="title_advanced_color">Advanced</string>
+    <string name="title_custom_color">Custom</string>
+    <string name="title_country_color">Countries</string>
+
+    <string name="title_common_effect">Common Effect</string>
+    <string name="title_seasonal_effect">Seasonal Effect</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="randomize">Randomize</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Hue Defaults -->
+    <string name="no_bridge">No Bridge Found.   Start Bridge Search</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_find_bridge">Find new bridge</string>
+    <string name="btn_random">Random Lights</string>
+    <string name="search_progress">Searching ...</string>
+    <string name="connecting">Connecting ...</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="txt_could_not_connect">No connection</string>
+    <string name="txt_click_random_button">Click the Random Lights Button to set your lamps to random colours.</string>
+    <string name="could_not_find_bridge">Hue cannot find your bridge. Please check that it is connected to the same Wi-Fi router as your app and press</string>
+    <string name="btn_more">More</string>
+    <string name="btn_reconnect">Reconnect</string>
+    <string name="enter_light_name">Enter light name</string>
+    <string name="txt_sdk_version">SDK Version</string>
+    <string name="menu_find_bridge">Find new Bridge</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="btn_retry">Retry</string>
+    <string name="searching_for_bridges">Searching for Bridges</string>
+    <string name="txt_selectbridges">Available Access Points</string>
+    <string name="txt_pushlink">Pushlink</string>
+    <string name="press_pushlink_button">Press the link button on the bridge</string>
+    <string name="txt_select_smartbridge">Please select a bridge to use for this app</string>
+    <string name="title_error">Error</string>
+    <string name="txt_last_heartbeat">Last Heartbeat : </string>
+
+
+    <!-- Custom App settings -->
+    <string name="group_name">Group Name</string>
+    <string name="add_group">Add Group</string>
+    <string name="delete">Delete</string>
+    <string name="change_the_light_color_for_this_group">Change the Light Color for this Group</string>
+    <string name="set_color">Set Color</string>
+
+    <!-- Alarm Activity -->
+    <string name="alarm_name">Alarm Name</string>
+    <string name="alarm_lights_on">Lights on</string>
+    <string name="alarm_lights_off">Lights off</string>
+    <string name="alarm_time">Time for alarm to start</string>
+    <string name="alarm_color">Choose a color</string>
+    <string name="alarm_repeat">Choose days to repeat</string>
+    <string name="alarm_fade">Fade time in minutes</string>
+    <string name="alarm_scene">Custom Scene set</string>
+    <string name="alarm_light_list">Lights to include in Alarm (List scrolls)</string>
+    <string name="alarm_none">No Alarms Exist! To create on use the "+" button in the upper right of the screen</string>
+
+    <string name="PM">PM</string>
+    <string name="AM">AM</string>
+    <string-array name="alarm_ampm">
+        <item>@string/AM</item>
+        <item>@string/PM</item>
+    </string-array>
+
+    <string-array name="alarm_hours_12">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="alarm_hours_24">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="alarm_minutes">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="alarm_fade">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+    </string-array>
+
+
+    <!-- End Alarm Activity -->
+
+    <string name="title_activity_color_picker">ColorPickerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_group">NewGroupActivity</string>
+    <string name="title_activity_hue_music_player">HueMusicPlayerActivity</string>
+    <string name="title_activity_play_list">PlayListActivity</string>
+    <string name="title_activity_effect_picker">EffectPickerActivity</string>
+    <string name="title_activity_color_picker2">ColorPickerActivity2</string>
+    <string name="title_activity_custom_color">CustomColorActivity</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_widget">WidgetActivity</string>
+    <string name="title_activity_song_list">SongListActivity</string>
+
+
+    <string name="about_text">\nUltimate Hue provides an easy free to use interface for accessing all your Hue Lights! Easily change a group of lights or an individual light to whatever lighting you desire.
+        \n\nThe goal of this app is to provide a one stop app for all your Hue lighting needs without any cost to the end user.
+
+        \n\nThis app uses Google Analytics to track usage. No private information about the user is stored. This tool just monitors screen clicks as to allow tracking for what part of the app is most heavily used and where there may be the biggest need for improvements.
+
+        \n\nSuggestions for new features? Contact Developer - dev.trev22@gmail.com
+    </string>
+    <string name="Help">Help</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_trigger">TriggerActivity</string>
+
+    <string name="trigger_prompt">Choose a action</string>
+    <string name="trigger_lights_off">Turn Lights Off</string>
+    <string name="trigger_lights_on">Turn Lights On</string>
+    <string name="trigger_flash_lights">Flash Lights</string>
+    <string name="trigger_nothing">Do Nothing</string>
+    <string name="trigger_effect">Play Effect</string>
+    <string name="trigger_light_list">Lights to include in Trigger (List scrolls)</string>
+    <string name="choose_color">Choose Color</string>
+    <string name="choose_effect">Choose Effect</string>
+
+    <string-array name="trigger_action_arrays">
+        <item>@string/trigger_nothing</item>
+        <item>@string/trigger_lights_off</item>
+        <item>@string/trigger_lights_on</item>
+        <item>@string/trigger_flash_lights</item>
+        <item>@string/trigger_effect</item>
+    </string-array>
+    <string name="title_colorpickeractivityv_list">Items</string>
+    <string name="title_colorpickeractivityv_detail">ColorPickerActivityV2 Detail</string>
+</resources>

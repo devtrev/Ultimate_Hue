@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevor.ultimatehue.fragments.EffectsFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_view_rounded_effects"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spnLightGroups"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Effect"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnEffectPicked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtEffectDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chkLoopIndefinately"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loop till interrupted" />
+
+            <CheckBox
+                android:id="@+id/chkPlayWithSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play with sound" />
+
+            <TextView
+                android:id="@+id/txtEffectLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of times to loop effect" />
+
+            <EditText
+                android:id="@+id/txtTimesToLoop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:minEms="3"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/txtLoopNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loop 1 of" />
+
+            <Button
+                android:id="@+id/btnEffectPlayStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+

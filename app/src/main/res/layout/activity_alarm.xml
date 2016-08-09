@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_name" />
+
+            <EditText
+                android:id="@+id/txtAlarmActivityName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Alarm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_time" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnAlarmHour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spnAlarmMinute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spnAlarmAMPM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleAlarmOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="alarmOnOff"
+                    android:textOff="@string/alarm_lights_off"
+                    android:textOn="@string/alarm_lights_on" />
+
+                <Button
+                    android:id="@+id/btnChooseColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="chooseColor"
+                    android:text="@string/alarm_color" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_fade" />
+
+            <Spinner
+                android:id="@+id/spnAlarmFade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_repeat" />
+
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioWeekends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekends" />
+
+                <RadioButton
+                    android:id="@+id/radioWeekdays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekdays" />
+
+                <RadioButton
+                    android:id="@+id/radioEveryday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Everyday" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_light_list" />
+
+            <ListView
+                android:id="@+id/checkedTextLights"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:text="CheckedTextView" />
+
+            <Button
+                android:id="@+id/btnCreateAlarm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="createAlarm"
+                android:text="Create Alarm" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

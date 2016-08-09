@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_screen_bg"
+    tools:context="com.trevor.ultimatehue.fragments.AllLightsFragment">
+
+    <TextView
+        android:id="@+id/txtAlarmNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_none"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvAlarms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#0000CC"
+        android:dividerHeight="3dp">
+    </ListView>
+
+</FrameLayout>

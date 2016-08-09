@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_view_rounded_single">
+
+    <ImageView
+        android:id="@+id/btnEditGroup"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="6dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_edit_orange"
+        android:visibility="gone"
+        android:layout_weight="0"/>
+
+    <Switch
+        android:id="@+id/group_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:textColor="@color/white"
+        android:textOff="Off"
+        android:textOn="On"
+        android:showText="true"
+        android:thumb="@drawable/switch_bg"/>
+    
+    <ImageButton
+        android:id="@+id/group_color"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ic_color_chooser"
+        android:contentDescription="@string/change_the_light_color_for_this_group"
+        android:backgroundTint="@color/common_signin_btn_light_text_default"
+        android:layout_weight="0"/>
+
+    <SeekBar
+        android:id="@+id/group_brightness"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="60dp"
+        android:max="254"
+        android:progressDrawable="@drawable/progressbar"
+        android:secondaryProgress="0"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:thumb="@drawable/progress_thumb"/>
+
+</TableRow>
